@@ -70,7 +70,7 @@ def main():
 
     if not args.dir or not os.path.isdir(args.dir):
         output_dir = (os.path.join(os.getcwd(),
-                      "igpanocrop_" +
+                      "seamlessgallery_" +
                       datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S")))
         os.mkdir(output_dir)
     else:
