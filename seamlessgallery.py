@@ -2,9 +2,16 @@
 """
 seamlessgallery.py
 
-crops wide images into a series of consecutive square images using ImageMagick 
-(I've used convert on the command line enough that I'd rather just interface 
-with that rather than looking into pillow, which seems to be rather old anyway)
+crops wide images into a series of consecutive square images using ImageMagick
+
+(there are probably better ways of doing this, but I got this to work pretty 
+quickly)
+
+TODOs
+- [ ] add flag to include "rest" of image
+- [ ] check to see if IG lets you use aspect ratios other than 1:1 for seamless
+  galleries; if it does, add a flag to specify the desired aspect ratio within
+  the limits of what IG allows
 """
 
 import subprocess
