@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-igpanocrop.py
+seamlessgallery.py
 
 crops wide images into a series of consecutive square images using ImageMagick 
 (I've used convert on the command line enough that I'd rather just interface 
@@ -61,8 +61,8 @@ def main():
                     "--dir",
                     help="output directory to which square images will be "
                          "saved; if none is specified, a timestamped "
-                         "igpanocrop folder will be created in the current "
-                         "working directory")
+                         "seamlessgallery folder will be created in the "
+                         "current working directory")
 
     args = ap.parse_args()
 
